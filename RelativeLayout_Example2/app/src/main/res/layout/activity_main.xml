@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/grupResmi"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/grupresim" />
+
+    <TextView
+        android:id="@+id/grupAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/grupResmi"
+        android:text="Kediler Hakkında Bilgi" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupAdi"
+        android:layout_toRightOf="@id/grupResmi"
+        android:text="10dk Önce." />
+
+    <TextView
+        android:id="@+id/metinBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupResmi"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Kediler Fotoğraf Çektirmeye Bayılıyor." />
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/metinBilgi"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/kedi" />
+
+    <ImageView
+        android:id="@+id/begen"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/resim"
+        android:background="@drawable/like" />
+
+    <TextView
+        android:id="@+id/likeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resim"
+        android:layout_toRightOf="@+id/begen"
+        android:padding="5dp"
+        android:text="Beğen" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:background="@drawable/comment"
+        android:id="@+id/yorumResmi"
+        android:layout_below="@+id/resim"
+        android:layout_toRightOf="@+id/likeinfo"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/commentInfo"
+        android:text="Yorum Yap"
+        android:layout_below="@id/resim"
+        android:layout_toRightOf="@id/yorumResmi"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:background="@drawable/share"
+        android:id="@+id/paylasResim"
+        android:layout_below="@+id/resim"
+        android:layout_toRightOf="@+id/commentInfo"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/shareInfo"
+        android:text="Paylaş"
+        android:layout_below="@id/resim"
+        android:layout_toRightOf="@id/paylasResim"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>
