@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buton_bir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metin İçeren Button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:text="Hem Metin Hemde Resim İçeren Button" />
+
+    <TextView
+        android:id="@+id/metin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="Merhaba Dünya, Bugün Çok Sıkıcı :("
+        android:textColor="#620259"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_arkaplan"
+        android:hint="Sayı Giriniz"
+        android:padding="10dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/hesapla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Faktöriyel Hesapla" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/sonuc"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
